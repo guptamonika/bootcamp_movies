@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		258DA8EC2CA952D3F466F411 /* libPods-bootcamp_movies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D22D6E61036CAD5744D25BF /* libPods-bootcamp_movies.a */; };
+		DC4F12291D89FDAF001153ED /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4F12271D89FDAF001153ED /* grid.png */; };
+		DC4F122A1D89FDAF001153ED /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4F12281D89FDAF001153ED /* list.png */; };
+		DC4F122D1D8A0A52001153ED /* MovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4F122C1D8A0A52001153ED /* MovieCollectionViewCell.m */; };
 		DCA2F0C41D871F8D0098F353 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA2F0C31D871F8D0098F353 /* Foundation.framework */; };
 		DCA2F0C61D871F8D0098F353 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA2F0C51D871F8D0098F353 /* CoreGraphics.framework */; };
 		DCA2F0C81D871F8D0098F353 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA2F0C71D871F8D0098F353 /* UIKit.framework */; };
 		DCA2F0CE1D871F8D0098F353 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCA2F0CC1D871F8D0098F353 /* InfoPlist.strings */; };
 		DCA2F0D01D871F8D0098F353 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA2F0CF1D871F8D0098F353 /* main.m */; };
 		DCA2F0D41D871F8D0098F353 /* MovieAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA2F0D31D871F8D0098F353 /* MovieAppDelegate.m */; };
-		DCA2F0D71D871F8D0098F353 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA2F0D51D871F8D0098F353 /* Main_iPhone.storyboard */; };
 		DCA2F0DA1D871F8D0098F353 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA2F0D81D871F8D0098F353 /* Main_iPad.storyboard */; };
 		DCA2F0DD1D871F8D0098F353 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA2F0DC1D871F8D0098F353 /* MovieViewController.m */; };
 		DCA2F0DF1D871F8D0098F353 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCA2F0DE1D871F8D0098F353 /* Images.xcassets */; };
@@ -22,6 +25,14 @@
 		DCA2F0E81D871F8D0098F353 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA2F0C71D871F8D0098F353 /* UIKit.framework */; };
 		DCA2F0F01D871F8D0098F353 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCA2F0EE1D871F8D0098F353 /* InfoPlist.strings */; };
 		DCA2F0F21D871F8E0098F353 /* bootcamp_moviesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA2F0F11D871F8D0098F353 /* bootcamp_moviesTests.m */; };
+		DCA2F0FE1D8725660098F353 /* MovieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA2F0FD1D8725660098F353 /* MovieTableViewCell.m */; };
+		DCD2C7571D886C2000C69919 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD2C7551D886C2000C69919 /* Main_iPhone.storyboard */; };
+		DCD2C75A1D8874B200C69919 /* MovieNavigationControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD2C7591D8874B200C69919 /* MovieNavigationControllerViewController.m */; };
+		DCD2C7641D88A6A500C69919 /* now.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD2C7621D88A6A500C69919 /* now.png */; };
+		DCD2C7651D88A6A500C69919 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD2C7631D88A6A500C69919 /* star.png */; };
+		DCD2C7701D88BF0000C69919 /* crown.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD2C76E1D88BF0000C69919 /* crown.png */; };
+		DCD2C7711D88BF0000C69919 /* timer.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD2C76F1D88BF0000C69919 /* timer.png */; };
+		DCEC67191D87617500288C96 /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEC67181D87617500288C96 /* MovieDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D22D6E61036CAD5744D25BF /* libPods-bootcamp_movies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bootcamp_movies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C62E311586CA011AE387332F /* Pods-bootcamp_movies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bootcamp_movies.release.xcconfig"; path = "Pods/Target Support Files/Pods-bootcamp_movies/Pods-bootcamp_movies.release.xcconfig"; sourceTree = "<group>"; };
+		DC4F12271D89FDAF001153ED /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grid.png; path = images/grid.png; sourceTree = "<group>"; };
+		DC4F12281D89FDAF001153ED /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = list.png; path = images/list.png; sourceTree = "<group>"; };
+		DC4F122B1D8A0A52001153ED /* MovieCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCollectionViewCell.h; sourceTree = "<group>"; };
+		DC4F122C1D8A0A52001153ED /* MovieCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCollectionViewCell.m; sourceTree = "<group>"; };
 		DCA2F0C01D871F8D0098F353 /* bootcamp_movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bootcamp_movies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA2F0C31D871F8D0098F353 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCA2F0C51D871F8D0098F353 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,7 +62,6 @@
 		DCA2F0D11D871F8D0098F353 /* bootcamp_movies-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bootcamp_movies-Prefix.pch"; sourceTree = "<group>"; };
 		DCA2F0D21D871F8D0098F353 /* MovieAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieAppDelegate.h; sourceTree = "<group>"; };
 		DCA2F0D31D871F8D0098F353 /* MovieAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieAppDelegate.m; sourceTree = "<group>"; };
-		DCA2F0D61D871F8D0098F353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		DCA2F0D91D871F8D0098F353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		DCA2F0DB1D871F8D0098F353 /* MovieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
 		DCA2F0DC1D871F8D0098F353 /* MovieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
@@ -55,6 +71,19 @@
 		DCA2F0ED1D871F8D0098F353 /* bootcamp_moviesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "bootcamp_moviesTests-Info.plist"; sourceTree = "<group>"; };
 		DCA2F0EF1D871F8D0098F353 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DCA2F0F11D871F8D0098F353 /* bootcamp_moviesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bootcamp_moviesTests.m; sourceTree = "<group>"; };
+		DCA2F0FC1D8725660098F353 /* MovieTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieTableViewCell.h; sourceTree = "<group>"; };
+		DCA2F0FD1D8725660098F353 /* MovieTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieTableViewCell.m; sourceTree = "<group>"; };
+		DCD2C7561D886C2000C69919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		DCD2C7581D8874B200C69919 /* MovieNavigationControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieNavigationControllerViewController.h; sourceTree = "<group>"; };
+		DCD2C7591D8874B200C69919 /* MovieNavigationControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieNavigationControllerViewController.m; sourceTree = "<group>"; };
+		DCD2C75B1D889DF100C69919 /* IcoMoon-Free.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IcoMoon-Free.ttf"; sourceTree = "<group>"; };
+		DCD2C7621D88A6A500C69919 /* now.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = now.png; path = images/now.png; sourceTree = "<group>"; };
+		DCD2C7631D88A6A500C69919 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = images/star.png; sourceTree = "<group>"; };
+		DCD2C76E1D88BF0000C69919 /* crown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crown.png; path = images/crown.png; sourceTree = "<group>"; };
+		DCD2C76F1D88BF0000C69919 /* timer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = timer.png; path = images/timer.png; sourceTree = "<group>"; };
+		DCEC67171D87617500288C96 /* MovieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetailViewController.h; sourceTree = "<group>"; };
+		DCEC67181D87617500288C96 /* MovieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetailViewController.m; sourceTree = "<group>"; };
+		FB517248C66D8748268DCFD0 /* Pods-bootcamp_movies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bootcamp_movies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bootcamp_movies/Pods-bootcamp_movies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +94,7 @@
 				DCA2F0C61D871F8D0098F353 /* CoreGraphics.framework in Frameworks */,
 				DCA2F0C81D871F8D0098F353 /* UIKit.framework in Frameworks */,
 				DCA2F0C41D871F8D0098F353 /* Foundation.framework in Frameworks */,
+				258DA8EC2CA952D3F466F411 /* libPods-bootcamp_movies.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +111,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		152BC155EAB6FF2BAD997102 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB517248C66D8748268DCFD0 /* Pods-bootcamp_movies.debug.xcconfig */,
+				C62E311586CA011AE387332F /* Pods-bootcamp_movies.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DCA2F0B71D871F8D0098F353 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +127,7 @@
 				DCA2F0EB1D871F8D0098F353 /* bootcamp_moviesTests */,
 				DCA2F0C21D871F8D0098F353 /* Frameworks */,
 				DCA2F0C11D871F8D0098F353 /* Products */,
+				152BC155EAB6FF2BAD997102 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +147,7 @@
 				DCA2F0C51D871F8D0098F353 /* CoreGraphics.framework */,
 				DCA2F0C71D871F8D0098F353 /* UIKit.framework */,
 				DCA2F0E51D871F8D0098F353 /* XCTest.framework */,
+				3D22D6E61036CAD5744D25BF /* libPods-bootcamp_movies.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,9 +155,12 @@
 		DCA2F0C91D871F8D0098F353 /* bootcamp_movies */ = {
 			isa = PBXGroup;
 			children = (
+				DCD2C75B1D889DF100C69919 /* IcoMoon-Free.ttf */,
+				DCEC67161D87614B00288C96 /* Controllers */,
+				DCA2F0FB1D8724730098F353 /* Views */,
 				DCA2F0D21D871F8D0098F353 /* MovieAppDelegate.h */,
 				DCA2F0D31D871F8D0098F353 /* MovieAppDelegate.m */,
-				DCA2F0D51D871F8D0098F353 /* Main_iPhone.storyboard */,
+				DCD2C7551D886C2000C69919 /* Main_iPhone.storyboard */,
 				DCA2F0D81D871F8D0098F353 /* Main_iPad.storyboard */,
 				DCA2F0DB1D871F8D0098F353 /* MovieViewController.h */,
 				DCA2F0DC1D871F8D0098F353 /* MovieViewController.m */,
@@ -129,6 +173,12 @@
 		DCA2F0CA1D871F8D0098F353 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DCD2C7621D88A6A500C69919 /* now.png */,
+				DCD2C7631D88A6A500C69919 /* star.png */,
+				DC4F12271D89FDAF001153ED /* grid.png */,
+				DC4F12281D89FDAF001153ED /* list.png */,
+				DCD2C76E1D88BF0000C69919 /* crown.png */,
+				DCD2C76F1D88BF0000C69919 /* timer.png */,
 				DCA2F0CB1D871F8D0098F353 /* bootcamp_movies-Info.plist */,
 				DCA2F0CC1D871F8D0098F353 /* InfoPlist.strings */,
 				DCA2F0CF1D871F8D0098F353 /* main.m */,
@@ -155,6 +205,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DCA2F0FB1D8724730098F353 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DCA2F0FC1D8725660098F353 /* MovieTableViewCell.h */,
+				DCA2F0FD1D8725660098F353 /* MovieTableViewCell.m */,
+				DC4F122B1D8A0A52001153ED /* MovieCollectionViewCell.h */,
+				DC4F122C1D8A0A52001153ED /* MovieCollectionViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DCEC67161D87614B00288C96 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DCEC67171D87617500288C96 /* MovieDetailViewController.h */,
+				DCEC67181D87617500288C96 /* MovieDetailViewController.m */,
+				DCD2C7581D8874B200C69919 /* MovieNavigationControllerViewController.h */,
+				DCD2C7591D8874B200C69919 /* MovieNavigationControllerViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCA2F0F51D871F8E0098F353 /* Build configuration list for PBXNativeTarget "bootcamp_movies" */;
 			buildPhases = (
+				103F7D0605FB11B84E3D289A /* [CP] Check Pods Manifest.lock */,
 				DCA2F0BC1D871F8D0098F353 /* Sources */,
 				DCA2F0BD1D871F8D0098F353 /* Frameworks */,
 				DCA2F0BE1D871F8D0098F353 /* Resources */,
+				F77DFBB83AE80296F7301DB1 /* [CP] Embed Pods Frameworks */,
+				A766180BDD9894E63BED95B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,9 +307,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCD2C7641D88A6A500C69919 /* now.png in Resources */,
+				DC4F122A1D89FDAF001153ED /* list.png in Resources */,
+				DCD2C7571D886C2000C69919 /* Main_iPhone.storyboard in Resources */,
+				DC4F12291D89FDAF001153ED /* grid.png in Resources */,
 				DCA2F0DA1D871F8D0098F353 /* Main_iPad.storyboard in Resources */,
+				DCD2C7651D88A6A500C69919 /* star.png in Resources */,
 				DCA2F0DF1D871F8D0098F353 /* Images.xcassets in Resources */,
-				DCA2F0D71D871F8D0098F353 /* Main_iPhone.storyboard in Resources */,
+				DCD2C7711D88BF0000C69919 /* timer.png in Resources */,
+				DCD2C7701D88BF0000C69919 /* crown.png in Resources */,
 				DCA2F0CE1D871F8D0098F353 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,14 +330,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		103F7D0605FB11B84E3D289A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A766180BDD9894E63BED95B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bootcamp_movies/Pods-bootcamp_movies-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F77DFBB83AE80296F7301DB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bootcamp_movies/Pods-bootcamp_movies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DCA2F0BC1D871F8D0098F353 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DCA2F0D01D871F8D0098F353 /* main.m in Sources */,
+				DCD2C75A1D8874B200C69919 /* MovieNavigationControllerViewController.m in Sources */,
 				DCA2F0DD1D871F8D0098F353 /* MovieViewController.m in Sources */,
+				DCEC67191D87617500288C96 /* MovieDetailViewController.m in Sources */,
+				DCA2F0FE1D8725660098F353 /* MovieTableViewCell.m in Sources */,
 				DCA2F0D41D871F8D0098F353 /* MovieAppDelegate.m in Sources */,
+				DC4F122D1D8A0A52001153ED /* MovieCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,14 +420,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		DCA2F0D51D871F8D0098F353 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DCA2F0D61D871F8D0098F353 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
 		DCA2F0D81D871F8D0098F353 /* Main_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -309,6 +434,14 @@
 				DCA2F0EF1D871F8D0098F353 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DCD2C7551D886C2000C69919 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCD2C7561D886C2000C69919 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -388,6 +521,7 @@
 		};
 		DCA2F0F61D871F8E0098F353 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB517248C66D8748268DCFD0 /* Pods-bootcamp_movies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -401,6 +535,7 @@
 		};
 		DCA2F0F71D871F8E0098F353 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C62E311586CA011AE387332F /* Pods-bootcamp_movies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -471,6 +606,7 @@
 				DCA2F0F71D871F8E0098F353 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DCA2F0F81D871F8E0098F353 /* Build configuration list for PBXNativeTarget "bootcamp_moviesTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +615,7 @@
 				DCA2F0FA1D871F8E0098F353 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

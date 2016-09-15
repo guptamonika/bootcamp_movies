@@ -7,12 +7,29 @@
 //
 
 #import "MovieAppDelegate.h"
+#import "MovieNavigationControllerViewController.h"
 
 @implementation MovieAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
+    MovieNavigationControllerViewController *nowPlayingNavigationController = [storyboard instantiateViewControllerWithIdentifier:@"MoviesNavigationController"];
+    nowPlayingNavigationController.title = @"Now Playing";
+    nowPlayingNavigationController.tabBarItem.image = [UIImage imageNamed:@"now.png"];
+    nowPlayingNavigationController.endpoint =  @"now_playing";
+    
+
+    MovieNavigationControllerViewController *topRatedNavigationController = [storyboard instantiateViewControllerWithIdentifier:@"MoviesNavigationController"];
+    topRatedNavigationController.title = @"Top Rated";
+    topRatedNavigationController.tabBarItem.image = [UIImage imageNamed:@"star.png"];
+    topRatedNavigationController.endpoint =  @"top_rated";
+    
+        UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[nowPlayingNavigationController, topRatedNavigationController];
+    
+    self.window.rootViewController = tabBarController;
     return YES;
 }
 							
