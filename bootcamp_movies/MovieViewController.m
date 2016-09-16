@@ -10,14 +10,16 @@
 #import "MovieTableViewCell.h"
 #import "MovieCollectionViewCell.h"
 #import "MovieDetailViewController.h"
-#import "UIImageView+AFNetworking.h"
 #import "MovieNavigationControllerViewController.h"
 #import "MBProgressHUD.h"
+#import "Utils.h"
+#import "MoviePosterViewController.h"
 
 @interface MovieViewController () <UITableViewDelegate, UITableViewDataSource,UISearchBarDelegate,UICollectionViewDataSource,UICollectionViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *errorLabel;
 @property (nonatomic, strong) NSArray *movies;
 @property (nonatomic, strong) NSArray *filteredMovies;
+@property (nonatomic, strong) Utils *utils;
 @property (nonatomic, strong) NSArray *layoutOptions;
 @property (nonatomic) BOOL filtered;
 @property (nonatomic, strong) NSString *template;
@@ -33,7 +35,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.utils = [[Utils alloc]init];
+
+    // Do any additional setup after loading the view, typically from a nib.
     // table view dataSource and delegate to self
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
@@ -128,13 +132,18 @@
     } else {
         movie = self.movies[indexPath.row];
     }
+    cell.toPosterButton.tag = indexPath.row;
     cell.title.text = movie[@"title"];
     cell.overview.text = movie[@"overview"];
-    NSURL* imageURL = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"https://image.tmdb.org/t/p/w342%@", movie[@"poster_path"]]];
-    [cell.image setImageWithURL:imageURL];
-                       
+    NSString *url = [NSString stringWithFormat:@"https://image.tmdb.org/t/p/w342%@", movie[@"poster_path"]];
+    [self.utils loadImageWithEffect:cell.image :url :nil];
+    UIView *backgroundView = [[UIView alloc]init];
+    backgroundView.backgroundColor = [UIColor colorWithRed:236 green:238 blue:245 alpha:0.6];
+    cell.selectedBackgroundView = backgroundView;
+    
     return cell;
 }
+
 // end of table functions
 
 - (void)didReceiveMemoryWarning
@@ -202,9 +211,13 @@
         movie = self.movies[indexPath.row];
     }
     
-    NSURL* imageURL = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"https://image.tmdb.org/t/p/w342%@", movie[@"poster_path"]]];
-    [cell.collectionMovie setImageWithURL:imageURL];
+    NSString* url = [NSString stringWithFormat:@"https://image.tmdb.org/t/p/w342%@", movie[@"poster_path"]];
+    [self.utils loadImageWithEffect:cell.collectionMovie :url :nil];
+
     cell.movieName.text = movie[@"title"];
+    UIView *backgroundView = [[UIView alloc]init];
+    backgroundView.backgroundColor = [UIColor colorWithRed:236 green:238 blue:245 alpha:0.6];
+    cell.selectedBackgroundView = backgroundView;
     
     return cell;
 }
@@ -222,10 +235,15 @@
             UICollectionViewCell *cell = sender;
             indexPath = [self.collectionView indexPathForCell:cell];
         }
-
         MovieDetailViewController *movieViewController = segue.destinationViewController;
         movieViewController.movie = self.movies[indexPath.row];
+    } else if ([segue.identifier isEqualToString:@"posterSegue" ]) {
+        UIButton *button = sender;
+        NSInteger row = button.tag;
+        MoviePosterViewController *moviePosterViewController = segue.destinationViewController;
+        moviePosterViewController.movie = self.movies[row];
     }
+    
 }
 // end segue functions
 

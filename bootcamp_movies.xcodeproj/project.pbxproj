@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		258DA8EC2CA952D3F466F411 /* libPods-bootcamp_movies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D22D6E61036CAD5744D25BF /* libPods-bootcamp_movies.a */; };
+		DC232C8D1D8B64E700763058 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = DC232C8C1D8B64E700763058 /* play.png */; };
 		DC4F12291D89FDAF001153ED /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4F12271D89FDAF001153ED /* grid.png */; };
 		DC4F122A1D89FDAF001153ED /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4F12281D89FDAF001153ED /* list.png */; };
 		DC4F122D1D8A0A52001153ED /* MovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4F122C1D8A0A52001153ED /* MovieCollectionViewCell.m */; };
@@ -33,6 +34,8 @@
 		DCD2C7701D88BF0000C69919 /* crown.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD2C76E1D88BF0000C69919 /* crown.png */; };
 		DCD2C7711D88BF0000C69919 /* timer.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD2C76F1D88BF0000C69919 /* timer.png */; };
 		DCEC67191D87617500288C96 /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEC67181D87617500288C96 /* MovieDetailViewController.m */; };
+		DCF3A0E31D8B435300E79DA0 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF3A0E21D8B435300E79DA0 /* Utils.m */; };
+		DCF3A0E71D8B502400E79DA0 /* MoviePosterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF3A0E61D8B502400E79DA0 /* MoviePosterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,7 @@
 /* Begin PBXFileReference section */
 		3D22D6E61036CAD5744D25BF /* libPods-bootcamp_movies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bootcamp_movies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C62E311586CA011AE387332F /* Pods-bootcamp_movies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bootcamp_movies.release.xcconfig"; path = "Pods/Target Support Files/Pods-bootcamp_movies/Pods-bootcamp_movies.release.xcconfig"; sourceTree = "<group>"; };
+		DC232C8C1D8B64E700763058 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = images/play.png; sourceTree = "<group>"; };
 		DC4F12271D89FDAF001153ED /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grid.png; path = images/grid.png; sourceTree = "<group>"; };
 		DC4F12281D89FDAF001153ED /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = list.png; path = images/list.png; sourceTree = "<group>"; };
 		DC4F122B1D8A0A52001153ED /* MovieCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCollectionViewCell.h; sourceTree = "<group>"; };
@@ -83,6 +87,10 @@
 		DCD2C76F1D88BF0000C69919 /* timer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = timer.png; path = images/timer.png; sourceTree = "<group>"; };
 		DCEC67171D87617500288C96 /* MovieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetailViewController.h; sourceTree = "<group>"; };
 		DCEC67181D87617500288C96 /* MovieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetailViewController.m; sourceTree = "<group>"; };
+		DCF3A0E21D8B435300E79DA0 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		DCF3A0E41D8B440C00E79DA0 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		DCF3A0E51D8B502400E79DA0 /* MoviePosterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviePosterViewController.h; sourceTree = "<group>"; };
+		DCF3A0E61D8B502400E79DA0 /* MoviePosterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviePosterViewController.m; sourceTree = "<group>"; };
 		FB517248C66D8748268DCFD0 /* Pods-bootcamp_movies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bootcamp_movies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bootcamp_movies/Pods-bootcamp_movies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +189,7 @@
 				DCD2C76F1D88BF0000C69919 /* timer.png */,
 				DCA2F0CB1D871F8D0098F353 /* bootcamp_movies-Info.plist */,
 				DCA2F0CC1D871F8D0098F353 /* InfoPlist.strings */,
+				DC232C8C1D8B64E700763058 /* play.png */,
 				DCA2F0CF1D871F8D0098F353 /* main.m */,
 				DCA2F0D11D871F8D0098F353 /* bootcamp_movies-Prefix.pch */,
 			);
@@ -223,6 +232,10 @@
 				DCEC67181D87617500288C96 /* MovieDetailViewController.m */,
 				DCD2C7581D8874B200C69919 /* MovieNavigationControllerViewController.h */,
 				DCD2C7591D8874B200C69919 /* MovieNavigationControllerViewController.m */,
+				DCF3A0E21D8B435300E79DA0 /* Utils.m */,
+				DCF3A0E41D8B440C00E79DA0 /* Utils.h */,
+				DCF3A0E51D8B502400E79DA0 /* MoviePosterViewController.h */,
+				DCF3A0E61D8B502400E79DA0 /* MoviePosterViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -314,6 +327,7 @@
 				DCA2F0DA1D871F8D0098F353 /* Main_iPad.storyboard in Resources */,
 				DCD2C7651D88A6A500C69919 /* star.png in Resources */,
 				DCA2F0DF1D871F8D0098F353 /* Images.xcassets in Resources */,
+				DC232C8D1D8B64E700763058 /* play.png in Resources */,
 				DCD2C7711D88BF0000C69919 /* timer.png in Resources */,
 				DCD2C7701D88BF0000C69919 /* crown.png in Resources */,
 				DCA2F0CE1D871F8D0098F353 /* InfoPlist.strings in Resources */,
@@ -384,8 +398,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCA2F0D01D871F8D0098F353 /* main.m in Sources */,
+				DCF3A0E71D8B502400E79DA0 /* MoviePosterViewController.m in Sources */,
 				DCD2C75A1D8874B200C69919 /* MovieNavigationControllerViewController.m in Sources */,
 				DCA2F0DD1D871F8D0098F353 /* MovieViewController.m in Sources */,
+				DCF3A0E31D8B435300E79DA0 /* Utils.m in Sources */,
 				DCEC67191D87617500288C96 /* MovieDetailViewController.m in Sources */,
 				DCA2F0FE1D8725660098F353 /* MovieTableViewCell.m in Sources */,
 				DCA2F0D41D871F8D0098F353 /* MovieAppDelegate.m in Sources */,
@@ -528,7 +544,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bootcamp_movies/bootcamp_movies-Prefix.pch";
 				INFOPLIST_FILE = "bootcamp_movies/bootcamp_movies-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -542,7 +560,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bootcamp_movies/bootcamp_movies-Prefix.pch";
 				INFOPLIST_FILE = "bootcamp_movies/bootcamp_movies-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
