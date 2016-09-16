@@ -14,9 +14,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999987" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Network Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3Vy-fw-bcl">
-                                <rect key="frame" x="0.0" y="61" width="338" height="61"/>
+                                <rect key="frame" x="0.0" y="100" width="318" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.66666668650000005" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -97,7 +97,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OHN-2N-kQL">
                                                     <rect key="frame" x="9" y="6" width="71" height="97"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button">
+                                                    <state key="normal">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
@@ -137,7 +137,6 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="gzM-42-ofG"/>
                     <navigationItem key="navigationItem" id="YBg-PR-rbJ">
@@ -157,7 +156,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="YhB-oI-eG6" id="QfZ-d0-31J"/>
-                        <outlet property="errorLabel" destination="3Vy-fw-bcl" id="m5C-Qv-C4x"/>
+                        <outlet property="errorLabel" destination="3Vy-fw-bcl" id="UiZ-b3-Ims"/>
                         <outlet property="layoutControl" destination="Fd7-ba-zcA" id="vbw-k3-X4u"/>
                         <outlet property="searchBar" destination="8Rw-l2-ztX" id="gAN-47-gQI"/>
                         <outlet property="tableView" destination="Y17-Pf-u4u" id="85D-df-2na"/>

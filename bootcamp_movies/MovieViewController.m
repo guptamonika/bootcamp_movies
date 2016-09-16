@@ -53,13 +53,15 @@
     
     self.title = self.navigationController.title;
     self.template = self.layoutOptions[self.layoutControl.selectedSegmentIndex];
+    self.errorLabel.hidden = true;
     [self changeLayout:self.template];
 }
 
 - (void) viewDidAppear:(BOOL)animated {
-    self.errorLabel.hidden = true;
-    self.template = self.layoutOptions[self.layoutControl.selectedSegmentIndex];
-    [self changeLayout:self.template];
+    if(self.errorLabel.hidden) {
+        self.template = self.layoutOptions[self.layoutControl.selectedSegmentIndex];
+        [self changeLayout:self.template];
+    }
     [self getMovies];
 }
 
@@ -98,10 +100,12 @@
                                                     self.movies = responseDictionary[@"results"];
                                                     [self.tableView reloadData];
                                                     [self.collectionView reloadData];
+                                                    self.errorLabel.hidden = true;
                                                 } else {
                                                     NSLog(@"An error occurred: %@", error.description);
                                                     self.errorLabel.hidden = false;
                                                     self.tableView.hidden = true;
+                                                    self.collectionView.hidden = true;
                                                 }
                                                 [self.refreshControl endRefreshing];
                                                 [MBProgressHUD hideHUDForView:self.view animated:true];
